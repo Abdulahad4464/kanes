@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 400px;
+    background: plum;
+    border: 3px solid red;
+    margin: 30px;
+    outline: 10px solid blue;
+    text-indent: 30px;
+}
+.container{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+    /* column - holatta "align-items" va "justify-content" teskari ishlaydi*/
+    /* align-items:flex-end; */
+    /* yonga suradi */
+    /* justify-content: flex-end; */
+    /* tepadan suradi */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* 0 - 1 - 1 - 0 */
+    /* justify-content: space-between; */
+    /* 1 - 1 - 1 - 1 */
+    /* justify-content: space-evenly; */
+    /* 1 - 2 - 2 - 1 */
+    /* justify-content: space-around; */
+}
+.item{
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    font-size: 2rem;
+}
+.first{
+    flex: 1;
+    order: 2;
+}
+.second{
+    flex: 2;
+    order: 1;
+} 
+.third{
+    order: 4;
+}
+.forth{
+    order: 3;
+}
+.phote001,
+.phote002{
+    width: 400px;
+}
+.phote001{
+    /*blur(5px)--> bjr-bjr */
+    filter: blur(5px);
+    /*grayscale(2000%)--> oq-qora   */
+    filter: grayscale(59%);
+    /* invert(100%)--> rengin */
+    filter: invert(100%);
+}
+.phote002{
+    /*contrast(200%)--> yorqinlik  */
+    filter: contrast(200%);
+    /*  brightness(600%)--> yorug`lik */
+    filter: brightness(600%);
+    /*hue-rotate(40%)--> ranglar uyg`unligi  */
+    filter: hue-rotate(400%);
+    /* saturate(200%)--> qizil moyilroq  */
+    filter: saturate(200%);
+    /*sepia(100%)--> ispan rang  */
+    filter: sepia(100%);
+}
